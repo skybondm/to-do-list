@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+#app {
+    width: 25%;
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.form {
+    padding: 25px;
+    border: 2px solid greenyellow;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+.task {
+    background-color: transparent;
+    color: white;
+    width: 80%;
+    border: 0;
+    outline: none;
+    border-bottom: 2px solid transparent;
+    font-size: 20px;
+    transition: 1s;
+}
+.task:focus {
+    border-bottom: 2px solid white;
+    line-height: 30px;
+    font-size: 25px;
+    transition: 1s;
+}
+.task:hover {
+    transition: 1s;
+}
+.cross {
+    background-image: url(images/add.svg);
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;    
+}
+.cross:hover {
+    cursor: pointer;
+    opacity: 70%;
+}
+.cross:active {
+    filter: saturate(390%);
+}
+.task_list {
+    width: 100%;
+}
+.delete {
+    background-image: url(images/delete.svg);
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;    
+}
+.delete:hover {
+    cursor: pointer;
+    opacity: 70%;
+}
+.delete:active {
+    filter: saturate(390%);
+}
